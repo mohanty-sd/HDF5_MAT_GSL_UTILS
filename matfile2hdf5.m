@@ -1,4 +1,4 @@
-function [] = matfile2hdf5new(inFileName, outFileName)
+function [] = matfile2hdf5(inFileName, outFileName)
 % Convert input data file to HDF5 format (C convention for matrices)
 %MATFILE2HDF5(I,O)
 %I is the name of the input .mat file. O is the name of the .h5 file. Only
@@ -6,7 +6,6 @@ function [] = matfile2hdf5new(inFileName, outFileName)
 %arrays are ignored. 
 
 %Soumya D. Mohanty, Jan 2016
-%Adapted from extinct code MATFILE2HDF5; Now handles strings properly
 
 %How many variables in inFile; Their names
 inFileInfo = load(inFileName);
